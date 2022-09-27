@@ -1,0 +1,14 @@
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.csproj.AssemblyReference.cache
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.AssemblyInfoInputs.cache
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.AssemblyInfo.cs
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.csproj.CoreCompileInputs.cache
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\bin\Debug\netcoreapp3.1\BAI1.exe
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\bin\Debug\netcoreapp3.1\BAI1.deps.json
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\bin\Debug\netcoreapp3.1\BAI1.runtimeconfig.json
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\bin\Debug\netcoreapp3.1\BAI1.runtimeconfig.dev.json
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\bin\Debug\netcoreapp3.1\BAI1.dll
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\bin\Debug\netcoreapp3.1\BAI1.pdb
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.dll
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.pdb
+C:\Users\j-hoo\RiderProjects\bai\Aftekenopdrachten1_stack_queue_random\Uitgangssituatie\BAI1\obj\Debug\netcoreapp3.1\BAI1.genruntimeconfig.cache
