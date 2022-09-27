@@ -30,8 +30,13 @@ namespace BAI
         {
             Queue<int> q = new Queue<int>();
 
-            // *** IMPLEMENTATION HERE *** //
+            int i = 1;
 
+            while (i <= 50)
+            {
+                q.Enqueue(i);
+                i++;
+            }
             return q;
         }
 
@@ -49,8 +54,14 @@ namespace BAI
         {
             Stack<int> stack = new Stack<int>();
 
-            // *** IMPLEMENTATION HERE *** //
-
+            while (queue.Count > 0)
+            {
+                int i = queue.Dequeue();
+                if (i % 4 == 0)
+                {
+                    stack.Push(i);
+                }
+            }
             return stack;
         }
 
@@ -66,6 +77,22 @@ namespace BAI
         public static Stack<int> Opdr3RandomNumbers(int lower, int upper, int count)
         {
             Stack<int> stack = new Stack<int>();
+            var a = new Dictionary<int, int>();
+
+            int i = 0;
+            var b = new Random();
+
+            while (i < count)
+            {
+                var c = b.Next(lower, upper +1);
+                
+                if (!a.ContainsKey(c))
+                {
+                    a.Add(c, c);
+                    stack.Push(c);
+                    i++;
+                }
+            }
 
             // *** IMPLEMENTATION HERE *** //
 
