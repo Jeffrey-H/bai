@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BAI
 {
@@ -67,7 +68,24 @@ namespace BAI
         {
             Stack<int> stack = new Stack<int>();
 
-            // *** IMPLEMENTATION HERE *** //
+            Random random = new Random();
+
+            Int32[] items = new Int32[count];
+
+            for (int i = 0; i < count; i++)
+            {
+                int randomInt;
+                do
+                {
+                    randomInt = random.Next(lower, upper + 1);
+                } while (items.Contains(randomInt));
+                items[i] = randomInt;
+            }
+
+            foreach (var item in items)
+            {
+                stack.Push(item);
+            }
 
             return stack;
         }
