@@ -20,17 +20,17 @@ namespace BAI
                 .Where(grp => grp.Count() > 1)
                 .Select(l => l.Key)
                 .ToList();
-
+                
+            List<int> oldList = lijst.ToList();
+            lijst.Clear();
             List<int> result =new List<int>();
-            foreach (var item in lijst)
+            foreach (var item in oldList)
             {
                 if (occurMoreThanOnce.Contains(item))
                 {
-                    result.Add(item);
+                    lijst.Add(item);
                 }
             }
-
-            lijst = result;
         }
 
 
