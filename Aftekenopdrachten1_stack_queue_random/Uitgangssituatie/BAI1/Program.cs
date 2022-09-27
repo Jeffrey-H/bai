@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BAI
 {
@@ -15,7 +16,21 @@ namespace BAI
         /// ------------------------------------------------------------
         public static void Opdr1FilterList(List<int> lijst)
         {
-            // *** IMPLEMENTATION HERE *** //
+            List<int> occurMoreThanOnce = lijst.GroupBy(l => l)
+                .Where(grp => grp.Count() > 1)
+                .Select(l => l.Key)
+                .ToList();
+
+            List<int> result =new List<int>();
+            foreach (var item in lijst)
+            {
+                if (occurMoreThanOnce.Contains(item))
+                {
+                    result.Add(item);
+                }
+            }
+
+            lijst = result;
         }
 
 
