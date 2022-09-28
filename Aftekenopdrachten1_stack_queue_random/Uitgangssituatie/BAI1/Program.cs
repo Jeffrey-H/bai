@@ -20,17 +20,20 @@ namespace BAI
                 .Where(grp => grp.Count() > 1)
                 .Select(l => l.Key)
                 .ToList();
-                
-            List<int> oldList = lijst.ToList();
+
+            int index = 0;
+            Dictionary<int, int> newList = lijst.FindAll(e => occurMoreThanOnce.Contains(e)).ToList().ToDictionary(i => index++, i => i);
             lijst.Clear();
-            List<int> result =new List<int>();
-            foreach (var item in oldList)
+
+            index = 0;
+            while (newList.Count > 0)
             {
-                if (occurMoreThanOnce.Contains(item))
-                {
-                    lijst.Add(item);
-                }
+                int item = newList[index];
+                lijst.Add(item);
+                newList.Remove(index);
+                index++;
             }
+
         }
 
 
