@@ -70,7 +70,7 @@ namespace BAI
 
             Random random = new Random();
 
-            Int32[] items = new Int32[count];
+            Dictionary<int, int> items = new Dictionary<int, int>();
 
             for (int i = 0; i < count; i++)
             {
@@ -78,13 +78,13 @@ namespace BAI
                 do
                 {
                     randomInt = random.Next(lower, upper + 1);
-                } while (items.Contains(randomInt));
-                items[i] = randomInt;
+                } while (items.ContainsKey(randomInt));
+                items.Add(randomInt, randomInt);
             }
 
             foreach (var item in items)
             {
-                stack.Push(item);
+                stack.Push(item.Key);
             }
 
             return stack;
