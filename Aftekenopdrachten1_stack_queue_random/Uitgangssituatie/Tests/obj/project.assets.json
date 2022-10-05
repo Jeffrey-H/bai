@@ -2044,6 +2044,7 @@
       "path": "system.appcontext/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2590,6 +2591,7 @@
       "path": "system.diagnostics.tools/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3056,6 +3058,7 @@
       "path": "system.linq.expressions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3139,6 +3142,7 @@
       "path": "system.objectmodel/4.0.12",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3289,6 +3293,7 @@
       "path": "system.reflection.emit/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3320,6 +3325,7 @@
       "path": "system.reflection.emit.ilgeneration/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -3352,6 +3358,7 @@
       "path": "system.reflection.emit.lightweight/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -4549,6 +4556,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4743,24 +4751,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\j-hoo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ronan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j-hoo\\RiderProjects\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\j-hoo\\RiderProjects\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\j-hoo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j-hoo\\RiderProjects\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\Tests\\obj\\",
+      "projectPath": "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\Ronan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ronan\\Source\\Repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\j-hoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ronan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4768,15 +4771,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\j-hoo\\RiderProjects\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj": {
-              "projectPath": "C:\\Users\\j-hoo\\RiderProjects\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj"
+            "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj": {
+              "projectPath": "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj"
             }
           }
         }
@@ -4834,7 +4836,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
