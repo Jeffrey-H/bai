@@ -16,22 +16,24 @@ namespace BAI
         /// ------------------------------------------------------------
         public static void Opdr1FilterList(List<int> lijst)
         {
-            List<int> occurMoreThanOnce = lijst.GroupBy(l => l)
-                .Where(grp => grp.Count() > 1)
-                .Select(l => l.Key)
-                .ToList();
+            Dictionary<int, int> occurance = new Dictionary<int, int>();
 
-            int index = 0;
-            Dictionary<int, int> newList = lijst.FindAll(e => occurMoreThanOnce.Contains(e)).ToList().ToDictionary(i => index++, i => i);
-            lijst.Clear();
-
-            index = 0;
-            while (newList.Count > 0)
+            foreach (int i in lijst.ToList())
             {
-                int item = newList[index];
-                lijst.Add(item);
-                newList.Remove(index);
-                index++;
+                if (occurance.ContainsKey(i))
+                {
+                    occurance[i]++;
+                    continue;
+                }
+                occurance.Add(i, 1);
+            }
+
+            for (int i = lijst.Count - 1; i >= 0; i--)
+            {
+                if (occurance[lijst.ElementAt(i)] < 2)
+                {
+                    lijst.RemoveAt(i);
+                }
             }
         }
 

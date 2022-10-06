@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj": {}
+    "/home/jeffrey/projects/school/jaar2/BAI/Aftekenopdrachten1_stack_queue_random/Uitgangssituatie/BAI1/BAI1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj": {
+    "/home/jeffrey/projects/school/jaar2/BAI/Aftekenopdrachten1_stack_queue_random/Uitgangssituatie/BAI1/BAI1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj",
+        "projectUniqueName": "/home/jeffrey/projects/school/jaar2/BAI/Aftekenopdrachten1_stack_queue_random/Uitgangssituatie/BAI1/BAI1.csproj",
         "projectName": "BAI1",
-        "projectPath": "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\BAI1.csproj",
-        "packagesPath": "C:\\Users\\Ronan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronan\\source\\repos\\bai\\Aftekenopdrachten1_stack_queue_random\\Uitgangssituatie\\BAI1\\obj\\",
+        "projectPath": "/home/jeffrey/projects/school/jaar2/BAI/Aftekenopdrachten1_stack_queue_random/Uitgangssituatie/BAI1/BAI1.csproj",
+        "packagesPath": "/home/jeffrey/.nuget/packages/",
+        "outputPath": "/home/jeffrey/projects/school/jaar2/BAI/Aftekenopdrachten1_stack_queue_random/Uitgangssituatie/BAI1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ronan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/jeffrey/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,27 +43,14 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
               "version": "[3.1.28, 3.1.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -73,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
         }
       }
     }
