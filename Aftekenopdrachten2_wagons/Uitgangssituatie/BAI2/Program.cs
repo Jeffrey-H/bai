@@ -9,51 +9,97 @@ namespace BAI
         public static bool Vooruit(uint b)
         {
             // *** IMPLEMENTATION HERE *** //
-            return false;
+            return b >> 7 == 1;
         }
         public static uint Vermogen(uint b)
         {
             // *** IMPLEMENTATION HERE *** //
-            return 0;
+            string binary = Convert.ToString(b, 2);
+            Console.WriteLine(binary);
+            Console.WriteLine(0b01000000);
+
+
+            if ((b & 0x60) == 0)
+            {
+                return 0;
+            }
+            if ((b & 0x40) == 0)
+            {
+                return 33;
+            }
+            if ((b & 0x20) == 0)
+            {
+                return 67;
+            }
+
+            else
+            {
+                return 100;
+            }
         }
         public static bool Wagon(uint b)
         {
             // *** IMPLEMENTATION HERE *** //
-            return false;
+            return (b & 0x10) > 0;
         }
         public static bool Licht(uint b)
         {
             // *** IMPLEMENTATION HERE *** //
-            return false;
+            return (b & 0x08) > 0;
         }
         public static uint ID(uint b)
         {
             // *** IMPLEMENTATION HERE *** //
-            return 0;
+            return (b & 0x07);
         }
 
         public static HashSet<uint> Alle(List<uint> inputStroom)
         {
             HashSet<uint> set = new HashSet<uint>();
             // *** IMPLEMENTATION HERE *** //
+            foreach (var item in inputStroom)
+            {
+                set.Add(item);
+            }
             return set;
         }
         public static HashSet<uint> ZonderLicht(List<uint> inputStroom)
         {
             HashSet<uint> set = new HashSet<uint>();
             // *** IMPLEMENTATION HERE *** //
+            foreach (var item in inputStroom)
+            {
+                if (Licht(item) == false)
+                {
+                    set.Add(item);
+                }
+            }
             return set;
         }
         public static HashSet<uint> MetWagon(List<uint> inputStroom)
         {
             HashSet<uint> set = new HashSet<uint>();
             // *** IMPLEMENTATION HERE *** //
+            foreach (var item in inputStroom)
+            {
+                if (Wagon(item))
+                {
+                    set.Add(item);
+                }
+            }
             return set;
         }
         public static HashSet<uint> SelecteerID(List<uint> inputStroom, uint lower, uint upper)
         {
             HashSet<uint> set = new HashSet<uint>();
             // *** IMPLEMENTATION HERE *** //
+            foreach (var item in inputStroom)
+            {
+                if (ID(item) >= lower && ID(item) <= upper)
+                {
+                    set.Add(item);
+                }
+            }
             return set;
         }
 
@@ -61,6 +107,9 @@ namespace BAI
         {
             HashSet<uint> set = new HashSet<uint>();
             // *** IMPLEMENTATION HERE *** //
+            set = SelecteerID(inputStroom, 0, 2);
+            HashSet<uint> zonderLicht = ZonderLicht(inputStroom);
+            set.IntersectWith(zonderLicht);
             return set;
         }
 
@@ -68,6 +117,9 @@ namespace BAI
         {
             HashSet<uint> set = new HashSet<uint>();
             // *** IMPLEMENTATION HERE *** //
+            set = Alle(inputStroom);
+            HashSet<uint> set2 = Opdr3a(inputStroom);
+            set.ExceptWith(set2);
             return set;
         }
 
